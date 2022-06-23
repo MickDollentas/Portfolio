@@ -12,11 +12,32 @@
     font-size: 30px;
   }
 
+  /**** ----- SKILLS ----- ****/
+
+  #skills-wrapper {
+    margin: 0;
+    padding: 50px 0 50px 0;
+  }
+
+  .tech-skills {
+    padding-top: 50px;
+  }
+
+  .tech-icons {
+    font-size: 4em;
+  }
+
   /***** ---- PROJECTS ---- *****/
 
   #project-wrapper {
     margin: 0 0 30px 0;
     width: 100%;
+    background-color: var(--beige);
+    padding-top: 10px;
+  }
+
+  #project-wrapper h2 {
+    color: var(--onyx);
   }
 
   .project-area {
