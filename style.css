@@ -50,12 +50,12 @@ h2 {
   border-bottom: 1px solid var(--onyx);
 }
 
-.nav-links {
+.menu-links {
   border-bottom: none;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
@@ -63,7 +63,7 @@ h2 {
   margin: 0 auto;
 }
 
-.link {
+.menu {
   color: var(--onyx);
   text-decoration: none;
   font-size: 1em;
@@ -71,12 +71,12 @@ h2 {
   letter-spacing: -2px;
 }
 
-.link {
+.menu {
   border-radius: 76% 24% 41% 59% / 56% 80% 20% 44%;
   transition: border-radius 1s;
 }
 
-.link:hover {
+.menu:hover {
   border: 2px solid var(--rose); 
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
@@ -168,6 +168,7 @@ h1 {
   height: auto;
   margin: auto;
   border-radius: 15px;
+  border: 1px solid #393D3F;
 }
 
 h3 {
@@ -189,41 +190,35 @@ h3 {
   width: 80%;
 }
 
-
 .buttons {
   display: flex;
   justify-content: space-around;
 }
 
-button {
+a {
   border-radius: 20px;
   padding: 25px 40px;
-  font: 'Lato', sans-serif;
   cursor: pointer;
 }
 
-.btn-code {
-  background-color: var(--rose);
-  border: none;
-}
-
-a > .btn-code {
-  text-decoration: none;
-  color: var(--white);
-}
-
-button:hover {
+.buttons > a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-code {
+  background-color: var(--beige);
+  border: none;
+  color: var(--onyx);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .btn-demo {
   background-color: var(--white);
-  border: 1px solid var(--rose);
-}
-
-a > .btn-demo {
+  border: 2px solid var(--beige);
+  color: var(--onyx);
   text-decoration: none;
-  color: var(--rose);
+  font-weight: bold;
 }
 
 /**** ----- ABOUT ----- *****/
@@ -331,19 +326,3 @@ footer .copyright {
   margin: 80px 0;
 }
 
-#myBtn {
-  position: fixed;  
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: var(--rose); 
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 18px; 
-}
-
-#myBtn:hover {
-  background-color: #555; 
-}
