@@ -43,10 +43,12 @@ h2 {
   background-color: var(--white);
   height: 100px;
   width: 100%;
+  justify-content: center;
+  flex-basis: auto;
   position: fixed;
   top: 0;
   z-index: 1;
-  margin: 0;
+  margin: 0 auto;
   border-bottom: 1px solid var(--onyx);
 }
 
@@ -56,7 +58,7 @@ h2 {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -69,16 +71,17 @@ h2 {
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: -2px;
+  margin: -30px;
 }
 
 .menu {
-  border-radius: 76% 24% 41% 59% / 56% 80% 20% 44%;
+  border-radius: 55% 24% 41% 59% / 56% 60% 20% 44%;
   transition: border-radius 1s;
 }
 
 .menu:hover {
   border: 2px solid var(--rose); 
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border-radius: 30% 50% 40% 30% / 30% 40% 70% 70%;
 }
 
 
@@ -91,7 +94,7 @@ h2 {
 }
 
 .title-container {
-  background: url(./img/port-bg.jpeg) no-repeat center/cover;
+  background: url(./img/port-bg_new.jpg) no-repeat center/cover;
   border-radius: 0px;
   box-shadow: none;
   height: 100%;
@@ -126,24 +129,52 @@ h1 {
 
 .glass > p {
   margin-top: 0;
-  color: var(--white);
+  color: var(--onyx);
   font-size: 2em;
 }
 
-/**** ----- SKILLS ----- *****/
- 
-.tech-icons {
-  border-bottom: none;
-  height: 100%;
+/**** ----- ABOUT ----- *****/
+
+#about-wrapper {
+  min-height: 100%;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style-type: none;
-  padding: 0 0 30px 0;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: -30px;
+}
+
+#about-wrapper > h2 {
+  color: var(--rose);
+  margin: -5px 0 40px 0;
+}
+
+.about-content {
+  margin-top: -50px;
+}
+
+.about > img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.about {
+  width: 80%;
   margin: 0 auto;
-  font-size: 3em;
+  padding-bottom: 30px;
+}
+
+.about > h3 {
+  font: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: var(--onyx);
+  margin: -40px 0 -30px 0;
+}
+
+.about > p {
+  width: 100%;
+  text-align: left;
+  font: 300 1.3em 'Lato', sans-serif;
   color: var(--onyx);
 }
 
@@ -238,47 +269,31 @@ a {
   font-weight: bold;
 }
 
-/**** ----- ABOUT ----- *****/
+/**** ----- SKILLS ----- *****/
+ 
+#skills-wrapper {
+  padding-bottom: 100px;
+}
 
-#about-wrapper {
-  min-height: 100%;
+.tech-icons {
+  border-bottom: none;
+  height: 100%;
   width: 100%;
-  text-align: center;
-}
-
-#about-wrapper > h2 {
-  color: var(--rose);
-  margin: -5px 0 40px 0;
-}
-
-.about-content {
-  margin-top: -50px;
-}
-
-.about > img {
-  width: 100%;
-  border-radius: 0px;
-}
-
-.about {
-  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 0 30px 0;
   margin: 0 auto;
-  padding-bottom: 30px;
+  color: var(--onyx);
 }
 
-.about > h3 {
-  font: 'Josefin Sans', sans-serif;
-  font-size: 2em;
-  text-align: center;
-  color: var(--onyx);
-  margin: -20px 0 -30px 0;
-}
-
-.about > p {
-  width: 100%;
-  text-align: left;
-  font: 300 18px 'Lato', sans-serif;
-  color: var(--onyx);
+.tech-icons li {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 50px 50px 50px;
+  font-size: 1em;
 }
 
 /**** FOOTER *****/
@@ -303,6 +318,8 @@ footer h4 {
 
 footer p {
   margin: 0;
+  font-size: 1.2em;
+  line-height: 2.5;
 }
 
 address {
