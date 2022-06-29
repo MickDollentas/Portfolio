@@ -5,18 +5,23 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="HTML, CSS, JavaScript, ReactJS, Portfolio" />
-  <meta property="og:url" content="http://www.michaeldollentas.com" />
-  <meta property="og:title" content="Michael Dollentas' Portfolio" />
-  <meta property="og:description" content="Front-End Web Developer and professional Dad" />
-  <meta property="og:image" href="https://i.postimg.cc/SRCbM3bT/hero-min.png" />
-  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.michaeldollentas.com" >
+  <meta property="og:title" content="Michael Dollentas' Portfolio" >
+  <meta property="og:description" content="Front-End Web Developer and professional Dad" >
+  <meta property="og:image" content="https://i.postimg.cc/jdYxtjvP/portfolio.png" >
+  <meta property="og:type" content="website" >
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://michaeldollentas.com/">
   <meta property="twitter:title" content="Michael Dollentas' Portfolio">
   <meta property="twitter:description" content="Front-End Web Developer and professional Dad">
-  <meta property="twitter:image" content="https://i.postimg.cc/SRCbM3bT/hero-min.png">
+  <meta property="twitter:image" content="https://i.postimg.cc/jdYxtjvP/portfolio.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b60c554fe0.js" crossorigin="anonymous"></script>
   <title>Michael Dollentas Portfolio</title>
   <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png" />
@@ -30,8 +35,7 @@
         <li><a href="#project-wrapper" class="menu"> projects</a></li>
         <li><a href="#skills-wrapper" class="menu"> skills</a></li>
         <li><a href="#footer-wrapper" class="menu"> contact</a></li>
-      </ul>
-  </a>          
+      </ul>          
     </nav>
   </header>     
 
@@ -191,13 +195,19 @@
       <section id="footer-wrapper">
         <div class="footer-content">
           <div class="contact">
-            <h4>Contact</h4>
-            <address>
-              <p>
-                (951)786-8595<br>
-                <a href="mailto:michael.dollentas@gmail.com"> michael.dollentas@gmail.com </a>
-              </p>
-            </address>
+            <div class="submit-form">
+              <h4>Contact</h4>
+                <form action="mailto:michael.dollentas@gmail.com" method="post" enctype="text/plain">
+                  Name:<br>
+                <input type="text" name="name"><br>
+                  E-mail:<br>
+                <input type="text" name="mail"><br>
+                  Comment:<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input type="submit" value="Send"><br>
+                <input type="reset" value="Reset">
+                </form>
+            </div>
           </div>
           <div class="social">
             <h4>Social</h4>
